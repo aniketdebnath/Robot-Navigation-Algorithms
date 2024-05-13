@@ -19,7 +19,6 @@ This Python program provides a comprehensive framework for solving robot navigat
 - [Grid Data Format](#grid-data-format)
 - [Examples](#examples)
 - [Contributing](#contributing)
-- [License](#license)
 
 ## Features
 
