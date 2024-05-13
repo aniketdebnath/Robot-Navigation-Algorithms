@@ -32,42 +32,42 @@ This Python program provides a comprehensive framework for solving robot navigat
 
     -pip install -r requirements.txt
 
-##Usage
+## Usage
+To run the script, use the following command:
+```
+-python script.py <filename> <method>
+```
+<filename>: Path to the file containing the grid data.
+<method>: The search algorithm to use. Valid methods are: GBFS, AS, DFS, BFS, CU1, CU2, MULTIBFS.
 
-    -To run the script, use the following command:
-    -python script.py <filename> <method>
+## Example:
+```
+python script.py grid.txt GBFS
+```
+## Search Algorithms
 
-    <filename>: Path to the file containing the grid data.
-    <method>: The search algorithm to use. Valid methods are: GBFS, AS, DFS, BFS, CU1, CU2, MULTIBFS.
-
-##Example:
-
-    python script.py grid.txt GBFS
-
-##Search Algorithms
-
---Greedy Best-First Search (GBFS)
+- Greedy Best-First Search (GBFS)
 Searches the nodes with the lowest heuristic scores first. Uses a heuristic function to estimate the cost to the nearest goal.
 
---A* Search (AS)
+- A* Search (AS)
 Combines the cost to reach the node and the heuristic cost to estimate the total path cost.
 
---Depth-First Search (DFS)
+- Depth-First Search (DFS)
 Explores as far as possible along each branch before backing up.
 
---Breadth-First Search (BFS)
+- Breadth-First Search (BFS)
 Explores all nodes at the present depth level before moving on to nodes at the next depth level.
 
---Iterative Deepening Search (IDS)
+- Iterative Deepening Search (IDS)
 Combines the benefits of depth-first search and breadth-first search, exploring nodes by increasing depth limits.
 
---Directional A* Search (DAS)
+- Directional A* Search (DAS)
 A variant of A* search that uses directional heuristics to guide the search.
 
---Multi-Goal Breadth-First Search (MULTIBFS)
+- Multi-Goal Breadth-First Search (MULTIBFS)
 Finds the shortest path that visits all specified goal states in a grid environment.
 
-##Grid Data Format
+## Grid Data Format
 The grid data file should follow this format:
 
 The first line contains the number of rows and columns in the grid.
@@ -75,7 +75,7 @@ The second line contains the starting position of the robot.
 The third line contains the goal positions.
 Subsequent lines define the walls as rectangles.
 
-##Example:
+## Example:
 
     5, 5
     (0, 0)
@@ -83,31 +83,31 @@ Subsequent lines define the walls as rectangles.
     (1, 1, 2, 1)
     (3, 2, 1, 3)
     
-    5, 5: Grid of 5 rows and 5 columns.
-    (0, 0): Starting position at (0, 0).
-    (4, 4), (1, 3): Goal positions at (4, 4) and (1, 3).
-    (1, 1, 2, 1): Wall starting at (1, 1) with width 2 and height 1.
-    (3, 2, 1, 3): Wall starting at (3, 2) with width 1 and height 3.
+5, 5: Grid of 5 rows and 5 columns.
+(0, 0): Starting position at (0, 0).
+(4, 4), (1, 3): Goal positions at (4, 4) and (1, 3).
+(1, 1, 2, 1): Wall starting at (1, 1) with width 2 and height 1.
+(3, 2, 1, 3): Wall starting at (3, 2) with width 1 and height 3.
 
-##Examples
---Running A* Search
-
-    python script.py grid.txt AS
-
---Running Multi-Goal BFS
-
-    python script.py grid.txt MULTIBFS
-
-##Output
+## Examples
+- Running A* Search
+```
+python script.py grid.txt AS
+```
+- Running Multi-Goal BFS
+```
+python script.py grid.txt MULTIBFS
+```
+## Output
 The program will print the following information:
 
---The filename and method used.
---Whether the goal was reached or not.
---The sequence of actions taken to reach the goal.
---The number of nodes expanded.
---The runtime in seconds.
+- The filename and method used.
+- Whether the goal was reached or not.
+- The sequence of actions taken to reach the goal.
+- The number of nodes expanded.
+- The runtime in seconds.
 
-Example Output
+## Example Output
 
     grid.txt AS
     goal (4, 4) number_of_nodes 10
