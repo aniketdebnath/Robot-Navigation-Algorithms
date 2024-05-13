@@ -90,11 +90,11 @@ Subsequent lines define the walls as rectangles.
     (3, 2, 1, 3): Wall starting at (3, 2) with width 1 and height 3.
 
 ##Examples
-Running A* Search
+--Running A* Search
 
     python script.py grid.txt AS
 
-Running Multi-Goal BFS
+--Running Multi-Goal BFS
 
     python script.py grid.txt MULTIBFS
 
