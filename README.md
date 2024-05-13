@@ -28,10 +28,6 @@ This Python program provides a comprehensive framework for solving robot navigat
 - **Timing and Node Expansion Tracking**: Each search method returns the number of nodes expanded and the runtime, providing insights into the performance of each algorithm.
 - **Grid Data Parsing**: Reads and parses grid data from a file to set up the problem environment.
 
-## Ensure you have Python 3 installed. Install any required dependencies (if any):
-
-    -pip install -r requirements.txt
-
 ## Usage
 To run the script, use the following command:
 ```
